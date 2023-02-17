@@ -4,14 +4,13 @@
     padding: 0;
 }
 
-header{
-    width: 100%;
-    height: 100%;
+body{
+    min-height: 100vh;
 }
 
 h1{
     position: absolute;
-    margin-top: 55px;
+    margin-top: 25px;
     margin-left: 105px;
     letter-spacing: 5px;
     font-size: 275%;
@@ -19,17 +18,15 @@ h1{
     font-style: italic;
     text-shadow: 2px 2px 5px lawngreen;
     z-index: 10;
-    
 }
 
 .logo{
     width: 100px;
     position:absolute;
     left: 1000px;
-    top: 300px;
+    top: 270px;
     border: 2px solid black;
     background-color: white;
-    box-shadow: 2px 2px 5px lawngreen;
 }
 .logo:hover{
     transform: scale(3);
@@ -37,10 +34,9 @@ h1{
 
 .image1{
     border: 2px solid black;
-    box-shadow: 2px 2px 5px lawngreen;
     width: 1100px;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left:100px;
     opacity: 0.8;
 }
@@ -85,7 +81,7 @@ a{
 .resalta{
     color: black;
     text-shadow: 2px 2px 5px lawngreen;
-    
+
 }
 
 .grande:hover{
@@ -94,12 +90,11 @@ a{
 }
 
 h2{
-    color: lawngreen;
+    color: white;
     text-align: center;
     width: 1100px;
     height: 30px;
     background-color: black;
-    box-shadow: 2px 2px 5px lawngreen;
     margin-top: -4px;
     margin-left: 100px;
     letter-spacing: 3px;
@@ -113,11 +108,9 @@ article{
 h3{
     margin-top: 40px;
     font-size: x-large;
-    box-shadow: 2px 2px 5px lawngreen;
 }
 
 p{
-    /* margin-left: 10px; */
     line-height: 1.5;
     font-size: 17px;
     text-align: justify;
@@ -130,10 +123,10 @@ body{
     margin-block-end: 15px;
 }
 
-table{
+.contenedor{
+    width: 800px;
     margin-top: 25px;
-    margin-left: 350px;
-    box-shadow: 2px 2px 5px lawngreen;
+    margin-left: 300px;
 }
 
 .abcd{
@@ -166,7 +159,6 @@ h6{
     font-size: 21px;
     padding-top: 13px;
     padding-bottom: 13px;
-    box-shadow: 2px 2px 5px lawngreen;
 }
 
 .separacion_parrafo{
@@ -185,4 +177,44 @@ h6{
 
 ol{
     margin-left: 10px;
+}
+
+.texto-italic{
+    font-style: italic;
+    text-align: left;
+    width: 830px;
+}
+
+.texto-subrayado{
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+tbody td{
+    text-align: center;
+}
+
+tfoot td{
+    padding-top: 10px;
+}
+
+.otro-titulo{
+    font-size: 35px;
+    text-align: center;
+    font-weight:bold;
+}
+
+h2, h3, h6, tbody td{
+    animation:cambiar-color 10s infinite;
+}
+
+.image1, .logo{
+    animation:cambiar-color 10s infinite;
+}
+
+@keyframes cambiar-color{
+    0% {box-shadow: 2px 2px 5px lawngreen;}
+    25% {box-shadow: 2px 2px 5px cyan;}
+    50% {box-shadow: 2px 2px 5px yellow;}
+    100% {box-shadow: 2px 2px 5px magenta;}
 }
